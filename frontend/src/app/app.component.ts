@@ -19,6 +19,6 @@ export class AppComponent {
   };
 
   saveChanges() {
-    alert('Hola mundo!');
+    console.log(this.user);
   }
 }
