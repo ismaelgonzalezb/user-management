@@ -3,10 +3,13 @@ const { request } = require("express");
 const express = require("express");
 const repository = require("./repository.js");
 const utils = require("./utils");
+const cors = require("cors");
+
 
 const server = express(); //Server
 const PORT = 3000;
 server.use(express.json()); //Middleware
+server.use(cors()); //Middleware
 
 //EndPoints
 
